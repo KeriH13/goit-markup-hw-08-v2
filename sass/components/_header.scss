@@ -1,0 +1,39 @@
+.main-title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 696px;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.big-title {
+  background-color: #2f303a;
+  display: flex;
+  justify-content: center;
+  min-height: 600px;
+  max-width: 1600px;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* which one use? */
+  background-size: cover;
+  /* object-fit: cover; */
+  margin: 0 auto;
+}
+.big-title.bg-image {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/bg.jpg");
+    background-position: center;
+}

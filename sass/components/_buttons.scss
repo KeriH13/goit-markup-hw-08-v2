@@ -1,0 +1,115 @@
+.btn {
+  background: var(--main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0px;
+  min-width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  
+        &:hover,
+        &:focus {
+        background: var(--main-color);
+        }
+}
+.btn-modal {
+  display: flex;
+  justify-content: center;
+}
+
+/* .btn:active {
+  background-color: var(--secondary-color);
+} */
+.btn{
+    &::first-letter {
+      text-transform: uppercase;
+    }
+}
+
+.list-group :nth-child(4n+1) .btn-item{
+  width: 121px;
+  height: 38px;
+}
+.list-group :nth-child(2) .btn-item{
+  width: 93px;
+  height: 38px;
+}
+.list-group :nth-child(3) .btn-item{
+  width: 114px;
+  height: 38px;
+}
+.list-group :nth-child(4) .btn-item{
+  width: 91px;
+  height: 38px;
+}
+
+
+// .list-group {
+// &:nth-child(4n+1) .btn-item{
+//   width: 121px;
+//   height: 38px;
+// }
+// &:nth-child(2) .btn-item{
+//   width: 93px;
+//   height: 38px;
+// }
+// &:nth-child(3) .btn-item{
+//   width: 114px;
+//   height: 38px;
+// }
+// &:nth-child(4) .btn-item{
+//   width: 91px;
+//   height: 38px;
+// }
+// }
+.buttons-section {
+  margin-bottom: 50px;
+}
+.btn-group {
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+  /* padding-right: 518px;
+  padding-left: 510px; */
+}
+.list-group:not(:last-child) {
+  margin-right: 8px;
+}
+.btn-item {
+  background: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding: 6px 22px;
+  border: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+        &:hover,
+        &:focus {
+        background-color: var(--main-color);
+        color: #fff;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        }
+}
+          /* .btn-item:active {
+            background-color: var(--secondary-color);
+          } */
