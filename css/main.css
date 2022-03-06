@@ -65,22 +65,26 @@ img {
   display: block;
 }
 
-.navigation {
-  border-bottom: 1px solid #ececec;
-}
-
-.navigation .container {
-  display: flex;
-  align-items: center;
-  height: 80px;
-  /* padding: 24px; unnecessary? */
-}
-
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  max-width: 480px;
   padding: 0 15px;
-  align-items: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 738px) {
+  .container {
+    max-width: 738px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
 }
 
 .section {
@@ -888,6 +892,7 @@ footer {
 
 .web-item {
   color: var(--main-color);
+  color: green;
 }
 
 .studio-item {
@@ -925,70 +930,10 @@ img {
   display: block;
 }
 
-.sub-navigation {
-  text-decoration: none;
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  color: #212121;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.sub-navigation:hover, .sub-navigation:focus {
-  color: var(--main-color);
-}
-
 /* .sub-navigation:active {
   color: var(--secondary-color);
 } */
-.navigation__list {
-  cursor: pointer;
-  list-style-type: none;
-  display: flex;
-}
-
-.navigation__item:not(:last-child) {
-  margin-right: 46px;
-}
-
 /* CHECKED SITE NAVIGATION */
-.sub-navigation.first-element-nav:visited {
-  color: var(--main-color);
-}
-
-.first-element-nav::after {
-  position: absolute;
-  content: "";
-  height: 4px;
-  width: 100%;
-  background-color: var(--main-color);
-  border-radius: 2px;
-  margin: 0;
-  padding: 0;
-  top: 46px;
-  left: 0;
-}
-
-.sub-navigation.second-element-nav:visited {
-  color: var(--main-color);
-}
-
-.second-element-nav::after {
-  position: absolute;
-  content: "";
-  height: 4px;
-  width: 100%;
-  background-color: var(--main-color);
-  border-radius: 2px;
-  margin: 0;
-  padding: 0;
-  top: 46px;
-  left: 0;
-}
-
 /* when i add "kontakt" site ---> "third-element-nav" i must add file (kontakt.html) like index.html or portfolio.html */
 /* .sub-navigation.third-element-nav:visited {
   color: var(--main-color);
@@ -1006,21 +951,9 @@ img {
   left: 0;
 } */
 /* END CHECKED SITE NAVIGATION */
-.navigation__item {
-  position: relative;
-}
-
-.sub-navigation:hover::after {
-  position: absolute;
-  content: "";
-  height: 4px;
-  width: 100%;
-  background-color: var(--main-color);
-  border-radius: 2px;
-  margin: 0;
-  padding: 0;
-  top: 46px;
-  left: 0;
+.navigation .container {
+  height: 60px;
+  padding: 16px 15px;
 }
 
 .portfolio-section {
